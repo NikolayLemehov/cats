@@ -1,2 +1,20 @@
-@import './common';
-@import './example';
+// utils
+
+@import "utils/vars";
+@import "utils/playsholders";
+@import "utils/mixins";
+@import "utils/common";
+@import "utils/container";
+
+// layout components
+
+@import 'components/layout/header';
+@import 'components/layout/footer';
+
+// section components
+
+@import 'components/sections/hero';
+@import 'components/sections/offerings';
+@import 'components/sections/favorite';
+@import 'components/sections/feedback';
+@import 'components/sections/subscription';
