@@ -53,6 +53,13 @@
   border: 11px solid $color-yellow-main;
   border-radius: 50%;
   overflow: hidden;
+  transition: border-color $transition;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $color-btn-green;
+  }
 
   $width: 417px;
   @media screen and (min-width: $width - 6px) {
