@@ -1,3 +1,37 @@
 .subscription {
+  padding-top: 95px;
+  padding-bottom: 60px;
 
+  @include mb(tab) {
+    padding-top: 156px;
+    padding-bottom: 100px;
+  }
+
+  @include mb(desk) {
+    padding-top: 46px;
+  }
+}
+
+.subscription__container {
+  @include mb(desk) {
+    display: grid;
+    grid-template-columns: 51%;
+  }
+}
+
+.subscription__title {
+  margin-bottom: 20px;
+}
+
+.subscription__text {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.14; // 16px;
+  color: $color-black;
+
+  @include mb(tab) {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
