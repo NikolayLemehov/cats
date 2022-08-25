@@ -1,9 +1,30 @@
 <section class="hero">
-  <h1>hero</h1>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolores
-    saepe eligendi autem laudantium, similique quos dignissimos, deleniti animi,
-    soluta ratione quaerat nihil aut maxime veniam labore voluptatem molestias
-    omnis.
-  </p>
+  <div class="container hero_container">
+    <div class="hero_wrap-left">
+      <h1 class="main-title">Enjoy Your Favorite Food From Anywhere</h1>
+      <p class="hero_desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <button type="button">Order Now</button>
+    </div>
+    <div class="hero_wrap-right">
+      <img
+        class="hero_img"
+        srcset="
+          ./images/hero/img1-292.jpg   292w,
+          ./images/hero/img1-528.jpg   528w,
+          ./images/hero/img1-584.jpg   584w,
+          ./images/hero/img1-1056.jpg 1056w
+        "
+        sizes="(min-width: 1200px) 528px, (min-width: 768px) 292px"
+        src="./images/hero/img1-528.jpg"
+        alt="a plate with bread and sauce"
+        width="528"
+        height="528"
+        loading="lazy"
+      />
+    </div>
+  </div>
 </section>
