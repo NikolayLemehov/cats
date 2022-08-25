@@ -1,3 +1,100 @@
 .favorite {
-  
+  padding: 60px 0;
+
+  @include mb(tab) {
+    padding: 100px 0;
+  }
+}
+
+.favorite__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.favorite__sub-title {
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.14; // 16px;
+
+  @include mb(tab) {
+    font-size: 16px;
+    line-height: 1.19; // 19px;
+  }
+
+  @include mb(desk) {
+    margin-bottom: 40px;
+  }
+}
+
+.favorite__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @include mb(tab) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+.favorite__item {
+  flex-shrink: 0;
+}
+
+.favorite__round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw - 2 * #{$padding-container-mob});
+  height: calc(100vw - 2 * #{$padding-container-mob});
+  border: 11px solid $color-yellow-main;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: border-color $transition;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $color-btn-green;
+  }
+
+  $width: 417px;
+  @media screen and (min-width: $width - 6px) {
+    gap: 14px;
+    width: calc(#{$width} - 2 * #{$padding-container-mob});
+    height: calc(#{$width} - 2 * #{$padding-container-mob});
+    border-width: 14px;
+  }
+
+  @include mb(tab) {
+    gap: 14px;
+    width: 336px;
+    height: 336px;
+    border-width: 14px;
+  }
+
+  @include mb(desk) {
+    gap: 16px;
+    width: 385px;
+    height: 385px;
+    border-width: 16px;
+  }
+}
+
+.favorite__img {
+  width: calc(100% - 2 * 17px);
+  height: calc(100% - 2 * 17px);
+
+  @include mb(tab) {
+    width: 268px;
+    height: 268px;
+  }
+
+  @include mb(desk) {
+    width: 315px;
+    height: 315px;
+  }
 }

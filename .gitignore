@@ -11,6 +11,10 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+# scss
+sass/index.css
+sass/index.css.map
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
