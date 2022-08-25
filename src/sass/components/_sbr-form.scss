@@ -1,7 +1,7 @@
 .sbr-form {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
 
   @include mb(tab) {
     flex-direction: row;
@@ -19,5 +19,11 @@
 
   @include mb(tab) {
     align-self: unset;
+  }
+}
+
+.sbr-form__field {
+  @include mb(tab) {
+    width: 395px;
   }
 }

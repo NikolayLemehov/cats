@@ -1,14 +1,31 @@
 .subscription {
   padding-top: 95px;
   padding-bottom: 60px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-image: url("../images/subscription/img-320w161.png");
+  @include retina {
+    background-image: url("../images/subscription/img-320w161@2x.png");
+  }
+  background-position: top center;
 
   @include mb(tab) {
     padding-top: 156px;
     padding-bottom: 100px;
+    background-image: url("../images/subscription/img-768w281.png");
+    @include retina {
+      background-image: url("../images/subscription/img-768w281@2x.png");
+    }
+    background-position: 93.4% 0;
   }
 
   @include mb(desk) {
     padding-top: 46px;
+    background-image: url("../images/subscription/img-1280w546.png");
+    @include retina {
+      background-image: url("../images/subscription/img-1280w546@2x.png");
+    }
+    background-position: 96.8% 0;
   }
 }
 
