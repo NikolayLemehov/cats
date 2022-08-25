@@ -1,5 +1,5 @@
-<section class="offerings" id="offerings">
-  <div class="container">
+<section class="offerings section" id="offerings">
+  <div class="container flex-test">
     <picture class="offerings__img">
       <source
         media="(min-width: 1280px)"
@@ -55,29 +55,40 @@
         loading="lazy"
       />
     </picture>
-    <h2 class="offerings__title">What’s Special About Our Offerings</h2>
-    <p class="offerings__description">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-    </p>
-    <ul class="offerings__list">
-      <li class="offerings__item offerings__item--rocket-icon">
-        <h3 class="offerings__subtitle">Fasest Delivery</h3>
-        <p class="offerings__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros.
-        </p>
-      </li>
-      <li class="offerings__item offerings__item--touch-icon">
-        <h3 class="offerings__subtitle">Easy to order</h3>
-        <p class="offerings__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros.
-        </p>
-      </li>
-    </ul>
-    <button type="button">Order Now</button>
-    <button type="button">Read More</button>
+    <div class="test">
+      <h2 class="offerings__title section__title">
+        What’s Special About Our Offerings
+      </h2>
+      <p class="offerings__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <ul class="offerings__list">
+        <li class="offerings__item offerings__item--rocket-icon">
+          <h3 class="offerings__subtitle">Fasest Delivery</h3>
+          <p class="offerings__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+        <li class="offerings__item offerings__item--touch-icon">
+          <h3 class="offerings__subtitle">Easy to order</h3>
+          <p class="offerings__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </p>
+        </li>
+      </ul>
+      <div class="offerings__btn-wrapper">
+        <button
+          class="btn btn--white btn--small offerings__btn-order"
+          type="button"
+        >
+          Order Now
+        </button>
+        <button class="offerings__btn-more" type="button">Read More</button>
+      </div>
+    </div>
   </div>
 </section>
