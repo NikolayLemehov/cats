@@ -1,0 +1,29 @@
+.sbr-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include mb(tab) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  @include mb(desk) {
+    gap: 32px;
+  }
+}
+
+.sbr-form__btn {
+  align-self: flex-end;
+
+  @include mb(tab) {
+    align-self: unset;
+  }
+}
+
+.sbr-form__field {
+  @include mb(tab) {
+    width: 395px;
+  }
+}
