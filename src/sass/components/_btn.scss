@@ -4,7 +4,7 @@
   align-items: center;
 
   font-family: inherit;
-  padding: 5px 16px;
+  padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -51,11 +51,36 @@
       background-color: $color-yellow-main;
     }
   }
+
+  &--slider {
+    width: 40px;
+    height: 48px;
+    background: $color-white-default;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    transition: color $transition, box-shadow $transition;
+
+    &:hover {
+      color: $color-dark-green;
+    }
+
+    &:active {
+      color: $color-black;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  &--rev-icon {
+
+  }
 }
 
-//.btn__icon {
-//  display: inline-block;
-//  width: 22px;
-//  height: 22px;
-//  vertical-align: center;
-//}
+.btn__icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: center;
+
+  .btn--rev-icon & {
+    transform: rotate(180deg);
+  }
+}
