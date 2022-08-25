@@ -1,1 +1,25 @@
-<footer class='subscription'>subscription</footer>
+<footer class='subscription section' id='subscription'>
+  <div class='container'>
+    <h2 class='subscription__title section__title'>Subscribe To Get Special Offers</h2>
+    <p class='subscription__text'>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+    </p>
+    <form class='sbr-form'>
+      <div class='sbr-form__label field'>
+        <label class='field__input-wrapper' for='sbr-email-field'>
+        </label>
+        <input class='field__input' id='sbr-email-field' type='email' name='email'
+               placeholder='Enter your email'>
+        <div class='field__error'>
+          <svg width='12' height='12'>
+              <use href='./images/icons.svg#icon-error'></use>
+          </svg>
+          Not a valid email address (example@email.com)
+        </div>
+      </div>
+      <button class='sbr-form__btn btn btn--big btn--green' type='submit'>
+        Subscribe
+      </button>
+    </form>
+  </div>
+</footer>
