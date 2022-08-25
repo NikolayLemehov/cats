@@ -1,6 +1,7 @@
 .header {
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .container-header {
@@ -16,7 +17,10 @@
 @media screen and (max-width: 480px) {
  .container-header {
   max-width: 320px;
-
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
  }
 
  .navi {
@@ -47,7 +51,7 @@
   border-radius: 30px 0px 30px 30px;
 }
 .navigation__anchor {
-  display: inline-block;
+  display: block;
   padding-left: 16px;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -56,13 +60,16 @@
 background: #BBF330;
   }
 
-  &:first-child {
+  &--start {
 border-radius: 30px 0px 0px 0px;
   }
 
-  &:last-child {
-    border-radius: 0px 3px 0px 30px;
+  &--end {
+    border-radius: 0px 0px 30px 30px;
+    padding-bottom: 19px;
   }
+
+
 
 }
 
@@ -79,11 +86,15 @@ border-radius: 30px 0px 0px 0px;
 
   .container-header {
     max-width: 768px;
-     outline: 1px solid red;
+      font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
   }
 
   .navigation {
     display: flex;
+    align-items: center;
   }
 
   .navigation-list {
@@ -103,6 +114,64 @@ border-radius: 30px 0px 0px 0px;
   border-radius: 30px;
   border: none;
   padding: 5px 17px 6px 16px;
+  margin-right: 32px;
+  cursor: pointer;
   }
+
+}
+
+
+@media screen and (min-width: 768.02px) {
+  .burger-icon {
+    display: none;
+  }
+
+  .logo-icon {
+    padding-left: 20px;
+  }
+
+  .container-header {
+    max-width: 1280px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .navigation-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .navigation-list__item {
+    margin-right: 28px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .btn-order {
+  background: #BBF330;
+  border-radius: 30px;
+  border: none;
+  padding: 5px 17px 6px 16px;
+  margin-right: 32px;
+  cursor: pointer;
+  }
+
+.navigation__anchor {
+
+  &:hover, &:focus {
+    text-decoration: underline;
+    color: #BBF330;
+  }
+}
 
 }
