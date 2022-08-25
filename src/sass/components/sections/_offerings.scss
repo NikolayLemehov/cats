@@ -1,5 +1,74 @@
 .offerings {
+  padding-top: 41px;
+  padding-bottom: 60px;
+
   background-image: url(../images/offerings/bcg-img-mob.svg);
   background-repeat: no-repeat;
-  max-width: 767px;
+  background-position: top center;
+  background-size: cover;
+
+  @include mb(tab) {
+    background-image: url(../images/offerings/bcg-img-tab.svg);
+  }
+
+  @include mb(desk) {
+    background-image: url(../images/offerings/bcg-img-desk.svg);
+  }
+
+  &__title {
+    font-size: 28px;
+    line-height: 1.17;
+
+    color: $color-black;
+
+    margin-top: 60px;
+
+    @include mb(tab) {
+      font-size: 42px;
+      line-height: 1.16;
+    }
+  }
+
+  &__description {
+    line-height: 1.14;
+    font-size: 14px;
+
+    color: $color-black;
+
+    margin-top: 28px;
+
+    @include mb(tab) {
+      margin-top: 28px;
+    }
+  }
+}
+
+.offerings__item {
+  margin-top: 28px;
+}
+
+.offerings__item::before {
+  content: '';
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+
+  background-color: $color-white-default;
+  background-image: url(../images/offerings/rocket.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.offerings__item--touch-icon::before {
+  content: '';
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+
+  background-color: $color-white-default;
+  background-image: url(../images/offerings/touch.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
 }
