@@ -1,4 +1,3 @@
-
 .hero_container {
     position: relative;
     
@@ -13,22 +12,18 @@
 
     @include mb (tab-only) {
        padding-bottom: 73px;
-     }
+    }
 
     @include mb (desk) {
         padding-top: 158px;
         padding-bottom: 164px;
     }
-
 }
 
 .hero_wrap-left {
-
     @include mb (desk) {
         width: 502px;
-     
-    }
-   
+    } 
 }
 
 .main-title {
@@ -52,16 +47,12 @@
     
     @include mb (desk) {
         font-size: 48px;
-        width: 468px;
-        
+        width: 468px;  
     }
- 
 }
  
 .hero_desc {
-
     line-height: 1.50;
-
     color: $color-black;
 
     @include mb (mob-only) {
@@ -70,21 +61,17 @@
     }
 
     @include mb (tab-only) {
-        width: 336px;
-       
+        width: 336px;  
     }
 
     @include mb (tab) {
-        margin-bottom: 40px;
-       
+        margin-bottom: 40px;  
     }
-
 }
 
 
 
 .hero_wrap-right {
-
     position: absolute;
     border-radius: 50%;
     overflow: hidden;
@@ -97,16 +84,12 @@
         width: 320px;
         right: 40px;
         bottom: 0;
-        border: 14px solid $color-yellow-main;
-       
+        border: 14px solid $color-yellow-main; 
     }
 
     @include mb (desk) {
         right: 14px;
        bottom: 14px;
        border: 26px solid $color-yellow-main;
-      
-
-    }
-    
+    } 
 }
