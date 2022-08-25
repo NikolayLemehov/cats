@@ -28,20 +28,44 @@
 }
 
 .favorite__list {
+  --gap: 22px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: var(--gap);
 
   @include mb(tab) {
+    --gap: 32px;
+    --columns: 2;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 32px;
+  }
+
+  @include mb(desk) {
+    --columns: 3;
   }
 }
 
 .favorite__item {
   flex-shrink: 0;
+
+  @include mb(mob-only) {
+    &:nth-child(n + 4) {
+      display: none;
+    }
+  }
+
+
+  @include mb(tab) {
+    width: calc((100% - (var(--columns) - 1) * var(--gap)) / var(--columns));
+    height: 336px;
+    border-width: 14px;
+  }
+
+  @include mb(desk) {
+    height: 394px;
+    border-width: 16px;
+  }
 }
 
 .favorite__round {
@@ -63,23 +87,19 @@
 
   $width: 417px;
   @media screen and (min-width: $width - 6px) {
-    gap: 14px;
+    //gap: 14px;
     width: calc(#{$width} - 2 * #{$padding-container-mob});
     height: calc(#{$width} - 2 * #{$padding-container-mob});
     border-width: 14px;
   }
 
   @include mb(tab) {
-    gap: 14px;
-    width: 336px;
-    height: 336px;
+    width: 100%;
+    height: 100%;
     border-width: 14px;
   }
 
   @include mb(desk) {
-    gap: 16px;
-    width: 385px;
-    height: 385px;
     border-width: 16px;
   }
 }
