@@ -1,3 +1,112 @@
-.hero {
 
+.hero_container {
+    position: relative;
+    
+    @include mb (mob-only) {
+       margin-bottom: 50px;
+       max-width: 440px;
+    }
+
+    @include mb (not-desk) {
+        padding-top: 60px;
+    }
+
+    @include mb (tab-only) {
+       padding-bottom: 73px;
+     }
+
+    @include mb (desk) {
+        padding-top: 158px;
+        padding-bottom: 164px;
+    }
+
+}
+
+.hero_wrap-left {
+
+    @include mb (desk) {
+        width: 502px;
+     
+    }
+   
+}
+
+.main-title {
+    margin-bottom: 28px;
+    color: $color-black;
+
+    @include mb (mob-only) {
+        font-size: 28px;
+        line-height: 1.18;
+    }
+
+    @include mb (tab-only) {
+        margin-bottom: 44px;
+        width: 537px; 
+    }
+
+    @include mb (tab) {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+    
+    @include mb (desk) {
+        font-size: 48px;
+        width: 468px;
+        
+    }
+ 
+}
+ 
+.hero_desc {
+
+    line-height: 1.50;
+
+    color: $color-black;
+
+    @include mb (mob-only) {
+        font-size: 14px;
+        margin-bottom: 28px;
+    }
+
+    @include mb (tab-only) {
+        width: 336px;
+       
+    }
+
+    @include mb (tab) {
+        margin-bottom: 40px;
+       
+    }
+
+}
+
+
+
+.hero_wrap-right {
+
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @include mb (mob-only) {
+        display: none;
+    }
+
+    @include mb (tab-only) {
+        width: 320px;
+        right: 40px;
+        bottom: 0;
+        border: 14px solid $color-yellow-main;
+       
+    }
+
+    @include mb (desk) {
+        right: 14px;
+       bottom: 14px;
+       border: 26px solid $color-yellow-main;
+      
+
+    }
+    
 }
