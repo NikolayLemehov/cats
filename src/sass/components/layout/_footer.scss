@@ -1,4 +1,5 @@
 .footer {
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
   background-repeat: no-repeat;
   background-position: center bottom;
   margin-left: auto;
@@ -101,7 +102,7 @@
 
   @include mb(desk) {
     color: $color-black;
-    margin-right: 200px;
+    margin-right: 100px;
   }
 }
 
@@ -123,6 +124,10 @@
   @include mb(mob-only) {
     width: 100%;
   }
+
+  @include mb(desk) {
+    margin-left: auto;
+  }
 }
 
 .subscription-form__title {
@@ -136,6 +141,7 @@
 }
 
 .subscription__field {
+  min-width: 279px;
   @include mb(mob-only) {
     width: 100%;
     max-width: 440px;
@@ -215,4 +221,8 @@
   font-size: 10px;
   line-height: 1.2;
   color: $color-black;
+
+  @include mb(tab) {
+    font-size: 12px;
+  }
 }
