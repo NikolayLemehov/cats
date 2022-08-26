@@ -17,12 +17,14 @@
     background-image: url(../images/offerings/bcg-img-tab.svg);
     padding-top: 150px;
     margin-top: -108px;
+    padding-bottom: 105px;
   }
 
   @include mb(desk) {
     background-image: url(../images/offerings/bcg-img-desk.svg);
     padding-top: 177px;
     margin-top: -163px;
+    padding-bottom: 75px;
   }
 }
 
@@ -35,9 +37,11 @@
 .offerings__img-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
 
   @include mb(desk) {
     width: 50%;
+    margin-bottom: 0;
   }
 }
 
@@ -56,14 +60,17 @@
   @include mb(desk) {
     width: 50%;
     align-self: center;
+    padding-top: 14px;
+    padding-left: 16px;
   }
 }
 
 .offerings__title {
-  margin-top: 60px;
+  margin-bottom: 28px;
 
   @include mb(tab) {
     width: 526px;
+    margin-bottom: 20px;
   }
 
   @include mb(desk) {
@@ -75,15 +82,13 @@
   line-height: 1.17;
   font-size: 14px;
 
-  margin-top: 28px;
-
   @include mb(tab) {
     max-width: 500px;
     font-size: 16px;
   }
 
   @include mb(desk) {
-    margin-top: 20px;
+    line-height: 1.5;
   }
 }
 
