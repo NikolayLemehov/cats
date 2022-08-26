@@ -47,9 +47,15 @@
   }
 }
 
+.offerings__img-default {
+  width: 100%;
+  height: 100%;
+}
+
 .offerings__content-container {
   @include mb(desk) {
     width: 50%;
+    align-self: center;
   }
 }
 
@@ -58,6 +64,10 @@
 
   @include mb(tab) {
     width: 526px;
+  }
+
+  @include mb(desk) {
+    margin-top: 0;
   }
 }
 
@@ -68,9 +78,22 @@
   margin-top: 28px;
 
   @include mb(tab) {
-    margin-top: 28px;
     max-width: 500px;
     font-size: 16px;
+  }
+
+  @include mb(desk) {
+    margin-top: 20px;
+  }
+}
+
+.offerings__item {
+  @include mb(mob-only) {
+    margin-top: 28px;
+  }
+
+  @include mb(tab) {
+    width: 252px;
   }
 }
 
@@ -78,6 +101,7 @@
   @include mb(tab) {
     display: flex;
     column-gap: 116px;
+    margin-top: 40px;
   }
 
   @include mb(desk) {
@@ -85,15 +109,11 @@
   }
 }
 
-.offerings__item {
-  margin-top: 28px;
-}
-
 .offerings__item--rocket-icon::before {
   content: '';
   width: 48px;
   height: 48px;
-  display: inline-block;
+  display: block;
 
   background-color: $color-white-default;
   background-image: url(../images/offerings/rocket.svg);
@@ -106,7 +126,7 @@
   content: '';
   width: 48px;
   height: 48px;
-  display: inline-block;
+  display: block;
 
   background-color: $color-white-default;
   background-image: url(../images/offerings/touch.svg);
@@ -116,12 +136,23 @@
 }
 
 .offerings__subtitle {
+  font-size: 18px;
+  line-height: 1.16;
   margin-top: 8px;
+
+  @include mb(desk) {
+    line-height: 1.4;
+  }
 }
 
 .offerings__text {
   font-size: 14px;
   margin-top: 16px;
+  line-height: 1.14;
+
+  @include mb(desk) {
+    line-height: 1.5;
+  }
 }
 
 .offerings__btn-wrapper {
@@ -152,10 +183,17 @@
   justify-content: center;
   align-items: center;
   column-gap: 4px;
+  padding: 0;
 
-  border: none;
   font-size: 14px;
   line-height: 1.5;
-  color: #000000;
+  color: $color-black;
   background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover {
+    color: $color-dark-green-hover;
+  }
 }
