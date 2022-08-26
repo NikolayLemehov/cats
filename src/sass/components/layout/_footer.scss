@@ -6,6 +6,7 @@
 
   @include mb(mob-only) {
     background-position: center bottom, top right, top 132px left;
+    background-size: 253px, 104px, 110px;
     max-width: 480px;
 
     background-image: url(../images/footer/img01-320_@1x.png),
@@ -15,12 +16,13 @@
     @include retina {
       background-image: url(../images/footer/img01-320_@2x.png),
         url(../images/footer/img02-320_@2x.png),
-        url(../images/footer/img03-320_@1x.png);
+        url(../images/footer/img03-320_@2x.png);
     }
   }
 
   @include mb(tab-only) {
     background-position: center bottom;
+    background-size: 785px;
     background-image: url(../images/footer/img01-768_@1x.png);
 
     @include retina {
@@ -29,6 +31,7 @@
   }
 
   @include mb(desk) {
+    background-size: 1211px;
     background-image: url(../images/footer/img01-1280_@1x.png);
 
     @include retina {
@@ -111,8 +114,8 @@
 .footer-nav__link {
   @include mb(desk) {
     display: block;
-    padding-top: 23px;
-    padding-bottom: 23px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -122,7 +125,7 @@
   }
 }
 
-.subscription__title {
+.subscription-form__title {
   display: block;
   margin-bottom: 12px;
   font-weight: 500;
@@ -133,49 +136,30 @@
 }
 
 .subscription__field {
-  //   height: 42px;
-  //   border: 0.9px solid $color-yellow-main;
-  //   border-radius: 30px;
-
   @include mb(mob-only) {
     width: 100%;
     max-width: 440px;
     margin-bottom: 20px;
   }
-
-  @include mb(tab) {
-    width: 279px;
-    margin-right: 14px;
-  }
-
-  //   &::placeholder {
-  //     padding: 12px;
-  //     font-size: 12px;
-  //     line-height: 1.5;
-  //     color: #505050;
 }
 
 .subscription__form-wrap {
-  display: flex;
-  @include mb(mob-only) {
-    flex-wrap: wrap;
-  }
-
   @include mb(tab) {
-    gap: 14px;
-    margin-bottom: 20px;
+    display: flex;
+    column-gap: 14px;
+    margin-bottom: 5px;
   }
 }
 
 .subscription__btn.btn {
   border-radius: 30px;
-  //   @include mb(mob-only) {
-  //     margin-bottom: 20px;
-  //   }
+  align-self: flex-start;
 
-  //   @include mb(tab) {
-  //     margin-bottom: 12px;
-  //   }
+  @include mb(mob-only) {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+  }
 }
 
 .agreement__text {
