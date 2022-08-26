@@ -1,177 +1,136 @@
 .header {
-  margin-left: auto;
-  margin-right: auto;
+  @include mb(mob-only) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
+  @include mb(desk) {
+    max-width: 1280px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14px;
+  }
 }
 
-.container-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  align-content: center;
-}
-
-
-
-@media screen and (max-width: 480px) {
- .container-header {
-  max-width: 320px;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
- }
-
- .navi {
-  margin-right: 22px;
+.header-container {
   position: relative;
- }
-
-.logo-icon {
-  margin-left: 24px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.navigation {
-  position: absolute;
-  z-index: 2;
-  top: 20px;
-  left: -109px;
-}
-
-.navigation-list {
   display: flex;
-  width: 130px;
+  align-items: center;
+  line-height: 1.19;
+}
+
+.menu-nav {
+  display: flex;
+  width: 60vw;
   height: 255px;
   flex-direction: column;
-  background: #FEFEFE;
+  background: #fefefe;
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
   border-radius: 30px 0px 30px 30px;
 }
-.navigation__anchor {
-  display: block;
-  padding-left: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px;
 
-  &:hover, &:focus {
-background: #BBF330;
+.navigation {
+  @include mb(tab) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.navi {
+  @include mb(tab) {
+    margin-right: 22px;
+    position: relative;
+  }
+}
+
+.navigation-list {
+  @include mb(mob-only) {
+    display: flex;
+    width: 60vw;
+    height: 255px;
+    flex-direction: column;
+    background: #fefefe;
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+    border-radius: 30px 0px 30px 30px;
+  }
+
+  @include mb(tab) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.navigation__anchor {
+  @include mb(mob-only) {
+    display: block;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  &:hover,
+  &:focus {
+    @include mb(mob-only) {
+      background: #bbf330;
+    }
   }
 
   &--start {
-border-radius: 30px 0px 0px 0px;
+    @include mb(mob-only) {
+      border-radius: 30px 0px 0px 0px;
+    }
   }
 
   &--end {
-    border-radius: 0px 0px 30px 30px;
-    padding-bottom: 19px;
+    @include mb(mob-only) {
+      border-radius: 0px 0px 30px 30px;
+    }
   }
-
-
-
 }
 
- .btn-order {
+.btn-order {
+  @include mb(mob-only) {
     display: none;
-  }
-
-}
-
-@media screen and (max-width: 768px) and (min-width: 481px) {
-  .burger-icon {
-    display: none;
-  }
-
-  .container-header {
-    max-width: 768px;
-      font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  }
-
-  .navigation {
-    display: flex;
-    align-items: center;
-  }
-
-  .navigation-list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
   }
 
   .navigation-list__item {
-    margin-right: 28px;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    @include mb(tab) {
+      margin-right: 28px;
+      padding-top: 28px;
+      padding-bottom: 28px;
+    }
   }
 
-  .btn-order {
-  background: #BBF330;
-  border-radius: 30px;
-  border: none;
-  padding: 5px 17px 6px 16px;
-  margin-right: 32px;
-  cursor: pointer;
+  @include mb(tab) {
+    font-family: inherit;
+    background: #bbf330;
+    border-radius: 30px;
+    border: none;
+    padding: 5px 17px 6px 16px;
+    margin-right: 32px;
+    cursor: pointer;
   }
-
 }
 
-
-@media screen and (min-width: 768.02px) {
-  .burger-icon {
+.burger-icon {
+  @include mb(tab) {
     display: none;
   }
+}
 
-  .logo-icon {
+.logo-icon {
+  @include mb(desk) {
     padding-left: 20px;
   }
-
-  .container-header {
-    max-width: 1280px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-
-  }
-
-  .navigation {
-    display: flex;
-    align-items: center;
-  }
-
-  .navigation-list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
-
-  .navigation-list__item {
-    margin-right: 28px;
-    padding-top: 28px;
-    padding-bottom: 28px;
-  }
-
-  .btn-order {
-  background: #BBF330;
-  border-radius: 30px;
-  border: none;
-  padding: 5px 17px 6px 16px;
-  margin-right: 32px;
-  cursor: pointer;
-  }
-
-.navigation__anchor {
-
-  &:hover, &:focus {
-    text-decoration: underline;
-    color: #BBF330;
-  }
 }
 
+@media screen and (min-width: 1280px) {
+  .navigation__anchor {
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: #bbf330;
+    }
+  }
 }

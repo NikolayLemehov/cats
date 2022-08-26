@@ -1,10 +1,10 @@
 // utils
 
-@import "utils/vars";
-@import "utils/playsholders";
-@import "utils/mixins";
-@import "utils/common";
-@import "utils/container";
+@import 'utils/vars';
+@import 'utils/playsholders';
+@import 'utils/mixins';
+@import 'utils/common';
+@import 'utils/container';
 
 // layout components
 
@@ -12,7 +12,7 @@
 @import 'components/layout/footer';
 
 // section components
-
+@import 'components/mobile-menu';
 @import 'components/btn';
 @import 'components/field';
 @import 'components/sbr-form';
@@ -23,4 +23,3 @@
 @import 'components/sections/favorite';
 @import 'components/sections/customers';
 @import 'components/sections/subscription';
-

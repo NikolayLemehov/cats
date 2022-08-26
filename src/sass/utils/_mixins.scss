@@ -1,11 +1,11 @@
 @mixin retina {
   @media (min-device-pixel-ratio: $retina-dppx),
-  (min-resolution: $retina-dpi),
-  (min-resolution: $retina-dppx) {
+    (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
     @content;
   }
 }
-@mixin mb ($type) {
+@mixin mb($type) {
   $mobile: $vp-big-mob;
   $tablet: $vp-tab;
   $desktop: $vp-desk;
@@ -15,8 +15,6 @@
     @media screen and (min-width: $mobile) {
       @content;
     }
-
-
   }
 
   // Від 0 до 767
@@ -25,7 +23,6 @@
     @media screen and (max-width: ($tablet - 0.02)) {
       @content;
     }
-
   }
 
   // Від 768 рх
@@ -34,7 +31,6 @@
     @media screen and (min-width: $tablet) {
       @content;
     }
-
   }
 
   // Від 768 до 1199
@@ -43,7 +39,6 @@
     @media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02)) {
       @content;
     }
-
   }
 
   // Від 1280
@@ -52,7 +47,6 @@
     @media screen and (min-width: $desktop) {
       @content;
     }
-
   }
 
   //  До 1279
