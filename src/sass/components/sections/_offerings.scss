@@ -125,6 +125,8 @@
 }
 
 .offerings__btn-wrapper {
+  display: flex;
+
   margin-top: 28px;
 
   @include mb(tab) {
@@ -146,10 +148,14 @@
 }
 
 .offerings__btn-more {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+
   border: none;
   font-size: 14px;
   line-height: 1.5;
   color: #000000;
-  width: 83px;
   background-color: transparent;
 }
