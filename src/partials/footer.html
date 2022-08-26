@@ -5,24 +5,51 @@
         <use class="" href="./images/icons.svg#icon-logo"></use>
       </svg>
       <ul class="footer-nav">
-        <li class="footer-nav__item"><a href="#hero">Home</a></li>
-        <li class="footer-nav__item"><a href="#offerings">Offerings</a></li>
-        <li class="footer-nav__item"><a href="#favorite">Favorites</a></li>
-        <li class="footer-nav__item"><a href="">Customers Say</a></li>
-        <li class="footer-nav__item"><a href="#subscription">Subscribe</a></li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#hero">Home</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#offerings">Offerings</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#favorite">Favorites</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="">Customers Say</a>
+        </li>
+        <li class="footer-nav__item">
+          <a class="footer-nav__link" href="#subscription">Subscribe</a>
+        </li>
       </ul>
-
       <form class="subscription__form" name="subscription-form">
         <strong class="subscription__title">Subscribe</strong>
-        <label>
-          <input
-            class="subscription__field"
-            type="email"
-            name="user-email"
-            placeholder="Enter your email"
-          />
-        </label>
-        <button class="subscription__btn" type="submit">Subscribe</button>
+        <div class="subscription__form-wrap">
+          <div class="field">
+            <label class="field__input-wrapper" for="ui-kit-email-field">
+            </label>
+            <input
+              class="field__input subscription__field"
+              id="ui-kit-email-field"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required=""
+            />
+            <div class="field__error">
+              <svg width="12" height="12">
+                <use href="./images/icons.svg#icon-error"></use>
+              </svg>
+              Not a valid email address (example@email.com)
+            </div>
+          </div>
+          <button
+            class="btn btn--big btn--white subscription__btn"
+            type="submit"
+          >
+            Subscribe
+          </button>
+        </div>
+
         <p class="agreement__text">
           By subscribing you agree to with our
           <a
@@ -35,6 +62,31 @@
           </a>
         </p>
       </form>
+      <!-- <form class="subscription__form" name="subscription-form">
+        <strong class="subscription__title">Subscribe</strong>
+        <label>
+          <input
+            class="subscription__field"
+            type="email"
+            name="user-email"
+            placeholder="Enter your email"
+          />
+        </label>
+        <button class="btn btn--big btn--white subscription__btn" type="submit">
+          Subscribe
+        </button>
+        <p class="agreement__text">
+          By subscribing you agree to with our
+          <a
+            class="agreement__link footer__link"
+            href=""
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+          >
+            Privacy Policy
+          </a>
+        </p>
+      </form> -->
     </div>
     <div class="footer-inform">
       <ul class="footer-inform__list">
