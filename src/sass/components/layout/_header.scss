@@ -1,35 +1,65 @@
-.header {
-  @include mb(mob-only) {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+// .header {
+//   @include mb(mob-only) {
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//   }
 
-  @include mb(desk) {
-    max-width: 1280px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14px;
-  }
-}
+//   @include mb(desk) {
+//     max-width: 1280px;
+//     font-size: 14px;
+//     line-height: 1.14px;
+//   }
+// }
 
 .header-container {
-  position: relative;
   display: flex;
   align-items: center;
   line-height: 1.19;
 }
-
-.menu-nav {
-  display: flex;
-  width: 60vw;
-  height: 255px;
-  flex-direction: column;
-  background: #fefefe;
-  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-  border-radius: 30px 0px 30px 30px;
+//              MENUmob               //
+.menu {
+  position: relative;
+  display: block;
 }
 
+.menu-nav {
+  @include mb(mob-only) {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    width: 60vw;
+    height: 255px;
+    flex-direction: column;
+    background: #fefefe;
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+    border-radius: 30px 0px 30px 30px;
+
+    display: none;
+  }
+}
+
+.menu-item {
+  @include mb(mob-only) {
+    color: red;
+  }
+}
+
+.menu-action {
+  @include mb(mob-only) {
+    display: block;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+//              MENUmob               //
+
 .navigation {
+  @include mb(mob-only) {
+    display: none;
+  }
+
   @include mb(tab) {
     display: flex;
     align-items: center;
@@ -44,16 +74,6 @@
 }
 
 .navigation-list {
-  @include mb(mob-only) {
-    display: flex;
-    width: 60vw;
-    height: 255px;
-    flex-direction: column;
-    background: #fefefe;
-    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-    border-radius: 30px 0px 30px 30px;
-  }
-
   @include mb(tab) {
     display: flex;
     align-items: center;
