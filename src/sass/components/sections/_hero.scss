@@ -86,8 +86,51 @@
   }
 
   @include mb(desk) {
-    right: 14px;
+    right: 30px;
     bottom: 14px;
     border: 26px solid $color-yellow-main;
+  }
+}
+
+.btn--left {
+  position: absolute;
+
+  @include mb(mob-only) {
+    display: none;
+  }
+
+  @include mb(tab-only) {
+    top: 295px;
+    right: 340px;
+  }
+
+  @include mb(desk) {
+    top: 277px;
+    left: 659px;
+  }
+}
+
+.btn--right {
+  position: absolute;
+
+  @include mb(mob-only) {
+    display: none;
+  }
+
+  @include mb(tab-only) {
+    right: 32px;
+    top: 295px;
+  }
+
+  @include mb(desk) {
+    top: 277px;
+    right: 20px;
+  }
+}
+
+.btn__icon--small {
+  @include mb(tab-only) {
+    width: 11px;
+    height: 20px;
   }
 }
