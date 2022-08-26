@@ -3,6 +3,7 @@
   padding-bottom: 60px;
   background-repeat: no-repeat;
   background-color: transparent;
+  background-size: 161px 78px;
   background-image: url("../images/subscription/img-320w161.png");
   @include retina {
     background-image: url("../images/subscription/img-320w161@2x.png");
@@ -12,6 +13,7 @@
   @include mb(tab) {
     padding-top: 156px;
     padding-bottom: 100px;
+    background-size: 281px 136px;
     background-image: url("../images/subscription/img-768w281.png");
     @include retina {
       background-image: url("../images/subscription/img-768w281@2x.png");
@@ -21,6 +23,7 @@
 
   @include mb(desk) {
     padding-top: 46px;
+    background-size: 546px 266px;
     background-image: url("../images/subscription/img-1280w546.png");
     @include retina {
       background-image: url("../images/subscription/img-1280w546@2x.png");
@@ -44,7 +47,6 @@
   margin-bottom: 40px;
   font-size: 14px;
   line-height: 1.14; // 16px;
-  color: $color-black;
 
   @include mb(tab) {
     margin-bottom: 24px;
