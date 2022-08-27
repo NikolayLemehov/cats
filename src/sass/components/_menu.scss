@@ -1,4 +1,4 @@
-.menu-btn {
+.menu__btn {
   background-color: transparent;
   border: none;
   padding: 0;
@@ -21,7 +21,7 @@
   }
 }
 
-.menu-nav {
+.menu__nav {
   display: none;
 
   &.is-open {
@@ -36,13 +36,13 @@
       height: 255px;
       flex-direction: column;
       background: $color-white;
-      box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
-      border-radius: 30px 0px 30px 30px;
+      box-shadow: 0 4px 24px rgba(105, 105, 105, 0.1);
+      border-radius: 30px 0 30px 30px;
     }
   }
 }
 
-.menu-action {
+.menu__action {
   @include mb(mob-only) {
     display: block;
     padding-left: 16px;
