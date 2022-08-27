@@ -197,6 +197,7 @@
   border: none;
 
   cursor: pointer;
+  transition: color $transition;
 
   &:hover {
     color: $color-dark-green-hover;
