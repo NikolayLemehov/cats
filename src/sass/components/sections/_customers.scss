@@ -1,21 +1,81 @@
 .feedback {
+  position: relative;
+  z-index: 1;
+  padding-top: 60px;
+  padding-bottom: 62px;
+
+  @include mb(tab) {
+    padding-top: 59px;
+    padding-bottom: 115px;
+  }
+
+  @include mb(desk) {
+    padding-top: 100px;
+    padding-bottom: 213px;
+  }
+}
+
+.feedback__bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url('../images/feedback/bg-mob.svg');
+
+  @include mb(tab) {
+    background-image: url('../images/feedback/bg-tab.svg');
+  }
+
+  @include mb(desk) {
+    background-image: url('../images/feedback/bg-desk.svg');
+  }
 }
 
 .feedback__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-
-  color: #2c2c2c;
+  margin-bottom: 20px;
 }
 
 .feedback__text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #2c2c2c;
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 1.14; // 16px;
+
+  @include mb(tab) {
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @include mb(desk) {
+    margin-bottom: 26px;
+  }
+}
+
+.feedback__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include mb(tab) {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  @include mb(desk) {
+    gap: 139px;
+  }
 }
 
 .feedback__item {
-  display: flex;
+  @include mb(tab) {
+    flex-basis: 336px;
+  }
+
+  @include mb(desk) {
+    flex-basis: 501px;
+  }
 }

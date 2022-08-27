@@ -1,3 +1,35 @@
 .header {
+  min-height: 72px;
+  box-shadow: 0 4px 24px rgba(105, 105, 105, 0.1);
+}
 
+.header__container {
+  display: flex;
+  align-items: center;
+  line-height: 1.19;
+}
+
+.navi {
+  @include mb(tab) {
+    margin-right: 22px;
+    position: relative;
+  }
+}
+
+.header__btn-order {
+  @include mb(mob-only) {
+    display: none;
+  }
+}
+
+.header__burger-icon {
+  @include mb(tab) {
+    display: none;
+  }
+}
+
+.header__logo-icon {
+  @include mb(tab) {
+    margin-right: auto;
+  }
 }

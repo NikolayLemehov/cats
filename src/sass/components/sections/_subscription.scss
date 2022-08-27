@@ -1,4 +1,6 @@
 .subscription {
+  position: relative;
+  margin-top: -45px;
   padding-top: 95px;
   padding-bottom: 60px;
   background-repeat: no-repeat;
@@ -11,6 +13,7 @@
   background-position: top center;
 
   @include mb(tab) {
+    margin-top: -82px;
     padding-top: 156px;
     padding-bottom: 100px;
     background-size: 281px 136px;
@@ -18,17 +21,17 @@
     @include retina {
       background-image: url("../images/subscription/img-768w281@2x.png");
     }
-    background-position: 93.4% 0;
+    background-position: calc(50% + 211px) 0;
   }
 
   @include mb(desk) {
-    padding-top: 46px;
+    padding-top: 54px;
     background-size: 546px 266px;
     background-image: url("../images/subscription/img-1280w546.png");
     @include retina {
       background-image: url("../images/subscription/img-1280w546@2x.png");
     }
-    background-position: 96.8% 0;
+    background-position: calc(50% + 342px) 8px;
   }
 }
 
