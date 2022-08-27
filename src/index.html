@@ -5,19 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href='favicon/apple-touch-icon.png'>
-    <link rel="icon" type="image/png" sizes="32x32" href='favicon/favicon-32x32.png'>
-    <link rel="icon" type="image/png" sizes="16x16" href='favicon/favicon-16x16.png'>
-    <link rel="manifest" href='favicon/site.webmanifest' crossorigin="use-credentials">
-    <link rel="mask-icon" href='favicon/safari-pinned-tab.svg' color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link
+      rel="manifest"
+      href="favicon/site.webmanifest"
+      crossorigin="use-credentials"
+    />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
     />
 
     <link rel="stylesheet" href="./sass/index.scss" />
@@ -32,5 +58,15 @@
     <include src="./partials/customers.html"></include>
     <include src="./partials/subscription.html"></include>
     <include src="./partials/footer.html"></include>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      $('.slider').slick({
+        prevArrow: `<button type='button' class='slick-prev btn btn--slider'><svg class='btn__icon btn__icon--small' width='17' height='30' viewBox="0 0 17 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M.45 15.905 14.383 29.18a1.25 1.25 0 0 0 1.725 0l.015-.015a1.15 1.15 0 0 0 0-1.668l-13.12-12.5 13.12-12.494a1.15 1.15 0 0 0 0-1.668L16.108.82a1.25 1.25 0 0 0-1.725 0L.45 14.095a1.251 1.251 0 0 0 0 1.81Z"/></svg></button>`,
+        nextArrow: `<button type='button' class='slick-next btn btn--slider btn--rev-icon'><svg class='btn__icon btn__icon--small' width='17' height='30' viewBox="0 0 17 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M.45 15.905 14.383 29.18a1.25 1.25 0 0 0 1.725 0l.015-.015a1.15 1.15 0 0 0 0-1.668l-13.12-12.5 13.12-12.494a1.15 1.15 0 0 0 0-1.668L16.108.82a1.25 1.25 0 0 0-1.725 0L.45 14.095a1.251 1.251 0 0 0 0 1.81Z"/></svg></button>`,
+      });
+    </script>
   </body>
 </html>
