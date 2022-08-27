@@ -1,1 +1,104 @@
-<section class="offerings">offerings</section>
+<section class="offerings section" id="offerings">
+  <div class="container offerings__container">
+    <div class="offerings__img-container">
+      <picture class="offerings__img">
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/offerings/apple-desk.webp    1x,
+            ./images/offerings/apple-desk@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/offerings/apple-desk.png    1x,
+            ./images/offerings/apple-desk@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/offerings/apple-tab.webp    1x,
+            ./images/offerings/apple-tab@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/offerings/apple-tab.png    1x,
+            ./images/offerings/apple-tab@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/offerings/apple-mob.webp    1x,
+            ./images/offerings/apple-mob@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/offerings/apple-mob.png    1x,
+            ./images/offerings/apple-mob@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="offerings__img-default"
+          src="./images/offerings/apple-mob.png"
+          alt="apple image"
+          loading="lazy"
+          width="280"
+          height="309"
+        />
+      </picture>
+    </div>
+    <div class="offerings__content-container">
+      <h2 class="offerings__title section__title">
+        What’s Special About Our Offerings
+      </h2>
+      <p class="offerings__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <ul class="offerings__list">
+        <li class="offerings__item offerings__item--rocket-icon">
+          <h3 class="offerings__subtitle">Fasest Delivery</h3>
+          <p class="offerings__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in&nbsp;eros.
+          </p>
+        </li>
+        <li class="offerings__item offerings__item--touch-icon">
+          <h3 class="offerings__subtitle">Easy to order</h3>
+          <p class="offerings__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in&nbsp;eros.
+          </p>
+        </li>
+      </ul>
+      <div class="offerings__btn-wrapper">
+        <button
+          class="btn btn--white btn--small offerings__btn-order"
+          type="button"
+        >
+          Order Now
+        </button>
+        <button class="offerings__btn-more" type="button">
+          Read More
+          <svg class="offerings__btn-icon" width="14" height="14">
+            <use href="./images/icons.svg#icon-btn-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
