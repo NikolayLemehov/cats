@@ -69,10 +69,14 @@
       color: $color-black;
       box-shadow: 0 4px 4px rgba(0, 0, 0, 0.16);
     }
+
+    @include mb(tab-only) {
+      width: 28px;
+      height: 34px;
+    }
   }
 
   &--rev-icon {
-
   }
 }
 
