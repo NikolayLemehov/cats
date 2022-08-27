@@ -97,10 +97,12 @@
   }
 
   @include mb(tab-only) {
+    --btn-shift: -28px;
     border: 14px solid $color-yellow-main;
   }
 
   @include mb(desk) {
+    --btn-shift: -14px;
     border: 26px solid $color-yellow-main;
   }
 }
@@ -109,7 +111,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 0;
+  right: var(--btn-shift);
 }
 
 .slick-prev {
@@ -117,5 +119,5 @@
   z-index: 2;
   top: 50%;
   transform: translateY(-50%);
-  left: 0;
+  left: var(--btn-shift);
 }
