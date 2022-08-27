@@ -53,8 +53,7 @@
     }
   }
 
-  &--slider,
-  &--slider.slick-prev {
+  &--slider {
     width: 40px;
     height: 48px;
     background: $color-white-default;
@@ -86,8 +85,7 @@
   display: inline-block;
   vertical-align: center;
 
-  .btn--rev-icon &,
-  .btn--rev-icon.slick-next &{
+  .btn--rev-icon & {
     transform: rotate(180deg);
   }
 }
