@@ -32,13 +32,15 @@
 .navigation__item {
   @include mb(tab) {
     margin-right: 28px;
-    padding-top: 28px;
-    padding-bottom: 28px;
   }
 }
 
 .navigation__anchor {
   @include mb(tab) {
+    display: block;
+    padding: 28px 0;
+    font-size: 14px;
+    line-height: 1.14; // 16px;
     transition: color $transition;
 
     &:hover,
