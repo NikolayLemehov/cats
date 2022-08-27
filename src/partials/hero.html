@@ -1,17 +1,17 @@
 <section class="hero">
-  <div class="container hero_container">
-    <div class="hero_wrap-left">
+  <div class="container hero__container">
+    <div class="hero__wrap--left">
       <h1 class="main-title">Enjoy Your Favorite Food From Anywhere</h1>
-      <p class="hero_desc">
+      <p class="hero__desc">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum tristique. Duis cursus, mi quis viverra
         ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
       </p>
-      <button type="button">Order Now</button>
+      <button class="btn btn--small btn--green" type="button">Order Now</button>
     </div>
-    <div class="hero_wrap-right">
+    <div class="hero__wrap--right">
       <img
-        class="hero_img"
+        class="hero__img"
         srcset="
           ./images/hero/img1-292.jpg   292w,
           ./images/hero/img1-528.jpg   528w,
@@ -26,5 +26,15 @@
         loading="lazy"
       />
     </div>
+    <button class="btn btn--slider btn--left" type="button">
+      <svg class="btn__icon btn__icon--small" width="17" height="30">
+        <use href="./images/icons.svg#icon-arrow-left"></use>
+      </svg>
+    </button>
+    <button class="btn btn--slider btn--rev-icon btn--right" type="button">
+      <svg class="btn__icon btn__icon--small" width="17" height="30">
+        <use href="./images/icons.svg#icon-arrow-left"></use>
+      </svg>
+    </button>
   </div>
 </section>
