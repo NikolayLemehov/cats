@@ -2,7 +2,11 @@
   padding: 60px 0;
 
   @include mb(tab) {
-    padding: 100px 0;
+    padding: 100px 0 144px;
+  }
+
+  @include mb(tab) {
+    padding-bottom: 106px;
   }
 }
 
