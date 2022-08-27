@@ -6,16 +6,18 @@
 @import 'utils/common';
 @import 'utils/container';
 
+// components
+@import 'components/btn';
+@import 'components/field';
+@import 'components/sbr-form';
+@import 'components/feedback-card';
+
 // layout components
 
 @import 'components/layout/header';
 @import 'components/layout/footer';
 
 // section components
-
-@import 'components/btn';
-@import 'components/field';
-@import 'components/sbr-form';
 
 @import 'components/sections/section';
 @import 'components/sections/hero';
