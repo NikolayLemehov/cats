@@ -9,13 +9,6 @@
   line-height: 1.19;
 }
 
-.navi {
-  @include mb(tab) {
-    margin-right: 22px;
-    position: relative;
-  }
-}
-
 .header__btn-order {
   @include mb(mob-only) {
     display: none;
