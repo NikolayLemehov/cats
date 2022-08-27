@@ -1,15 +1,6 @@
-// .header {
-//   @include mb(mob-only) {
-//     padding-top: 10px;
-//     padding-bottom: 10px;
-//   }
-
-//   @include mb(desk) {
-//     max-width: 1280px;
-//     font-size: 14px;
-//     line-height: 1.14px;
-//   }
-// }
+.header {
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
 
 .header-container {
   display: flex;
@@ -18,29 +9,30 @@
 }
 //              MENUmob               //
 .menu {
-  position: relative;
-  display: block;
+  @include mb(mob-only) {
+    margin-left: auto;
+    position: relative;
+    display: block;
+  }
+
+  @include mb(tab) {
+    display: none;
+  }
 }
 
 .menu-nav {
   @include mb(mob-only) {
+    top: 18px;
+    right: 5px;
     z-index: 2;
     position: absolute;
     display: flex;
-    width: 60vw;
+    width: 50vw;
     height: 255px;
     flex-direction: column;
     background: #fefefe;
     box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
     border-radius: 30px 0px 30px 30px;
-
-    display: none;
-  }
-}
-
-.menu-item {
-  @include mb(mob-only) {
-    color: red;
   }
 }
 
@@ -50,6 +42,26 @@
     padding-left: 16px;
     padding-top: 16px;
     padding-bottom: 16px;
+    transition: background-color $transition;
+  }
+
+  &:hover,
+  &:focus {
+    @include mb(mob-only) {
+      background-color: #bbf330;
+    }
+  }
+}
+
+.menu-action-first {
+  @include mb(mob-only) {
+    border-radius: 30px 0px 0px 0px;
+  }
+}
+
+.menu-action-last {
+  @include mb(mob-only) {
+    border-radius: 0px 0px 30px 30px;
   }
 }
 
@@ -79,22 +91,6 @@
     align-items: center;
     justify-content: flex-end;
   }
-}
-
-.navigation__anchor {
-  @include mb(mob-only) {
-    display: block;
-    padding-left: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-
-  &:hover,
-  &:focus {
-    @include mb(mob-only) {
-      background: #bbf330;
-    }
-  }
 
   &--start {
     @include mb(mob-only) {
@@ -113,23 +109,13 @@
   @include mb(mob-only) {
     display: none;
   }
+}
 
-  .navigation-list__item {
-    @include mb(tab) {
-      margin-right: 28px;
-      padding-top: 28px;
-      padding-bottom: 28px;
-    }
-  }
-
+.navigation-list__item {
   @include mb(tab) {
-    font-family: inherit;
-    background: #bbf330;
-    border-radius: 30px;
-    border: none;
-    padding: 5px 17px 6px 16px;
-    margin-right: 32px;
-    cursor: pointer;
+    margin-right: 28px;
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
 }
 
@@ -140,13 +126,15 @@
 }
 
 .logo-icon {
-  @include mb(desk) {
-    padding-left: 20px;
+  @include mb(tab) {
+    margin-right: auto;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .navigation__anchor {
+.navigation__anchor {
+  @include mb(tab) {
+    transition: color $transition;
+
     &:hover,
     &:focus {
       text-decoration: underline;

@@ -1,8 +1,8 @@
 .menu-btn {
-  margin-left: auto;
   background-color: transparent;
   border: none;
   padding: 0;
+  color: $color-dark-green;
 
   @include mb(tab) {
     display: none;
