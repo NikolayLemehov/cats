@@ -120,7 +120,7 @@
   }
 }
 
-.subscription__form {
+.subscription-form {
   @include mb(mob-only) {
     width: 100%;
   }
@@ -140,7 +140,11 @@
   color: $color-black;
 }
 
-.subscription__field {
+.subscription-form__wrap .field {
+  display: block;
+}
+
+.subscription-form__field {
   min-width: 279px;
   @include mb(mob-only) {
     width: 100%;
@@ -149,7 +153,7 @@
   }
 }
 
-.subscription__form-wrap {
+.subscription-form__wrap {
   @include mb(tab) {
     display: flex;
     column-gap: 14px;
@@ -157,7 +161,7 @@
   }
 }
 
-.subscription__btn.btn {
+.subscription-form__btn.btn {
   border-radius: 30px;
   align-self: flex-start;
 
@@ -168,7 +172,7 @@
   }
 }
 
-.agreement__text {
+.agreement {
   color: $color-black;
 
   @include mb(mob-only) {
@@ -177,7 +181,7 @@
   }
 }
 
-.agreement__text,
+.agreement,
 .footer__link {
   @include mb(mob-only) {
     font-size: 10px;
