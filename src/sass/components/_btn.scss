@@ -5,8 +5,8 @@
 
   font-family: inherit;
   padding: 0;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 13px;
   line-height: 150%;
   text-align: center;
   color: $color-black;
@@ -18,12 +18,12 @@
   transition: border-color $transition, background-color $transition;
 
   &--small {
-    padding: 5px 16px;
+    padding: 7px 20px;
   }
 
   &--big {
     min-height: 42px;
-    padding: 8px 22px;
+    padding: 10px 22px;
   }
 
   &--green {

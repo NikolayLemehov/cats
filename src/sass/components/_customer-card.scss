@@ -34,9 +34,22 @@
 }
 
 .customer-card__cite-wrap {
-  display: flex;
+  position: relative;
+  display: inline-flex;
   align-items: center;
   gap: 16px;
+  min-height: 52px;
+  padding-right: 16px;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: $color-dark-green;
+  }
 }
 
 .customer-card__img-wrap {
@@ -49,9 +62,11 @@
 }
 
 .customer-card__cite {
+  position: relative;
   display: flex;
   flex-direction: column;
   font-style: normal;
+  gap: 2px;
   font-size: 13.7px;
   line-height: 1.5;
 }

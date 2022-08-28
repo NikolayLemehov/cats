@@ -1,11 +1,9 @@
 .customers {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 62px;
+  padding: 60px 0;
 
   @include mb(tab) {
-    padding-top: 59px;
-    padding-bottom: 115px;
+    padding-bottom: 120px;
   }
 
   @include mb(desk) {
@@ -31,7 +29,7 @@
   @include mb(tab) {
     background-size: 100% 554px, 100% 100%;
     --adge: 150px;
-    background-image: url('../images/customers/bg-mob.svg'),
+    background-image: url('../images/customers/bg-tab.svg'),
     linear-gradient(to top, transparent, transparent var(--adge), $color-yellow-main var(--adge), $color-yellow-main);
   }
 
@@ -53,9 +51,9 @@
   line-height: 1.14; // 16px;
 
   @include mb(tab) {
-    margin-bottom: 48px;
+    margin-bottom: 32px;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.19;
   }
 
   @include mb(desk) {

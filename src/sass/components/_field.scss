@@ -40,11 +40,10 @@
   font-size: 10px;
   line-height: 150%;
   color: $color-error;
-  opacity: 1;
+  opacity: 0;
 
-  .field__input:not(:placeholder-shown):valid ~ &,
-  .field__input:not(:placeholder-shown):focus ~ &,
-  .field__input:placeholder-shown ~ & {
-    opacity: 0;
+  .field__input:focus:not(:placeholder-shown):required:invalid ~ &,
+  .field__input:not(:placeholder-shown):required:invalid ~ & {
+    opacity: 1;
   }
 }

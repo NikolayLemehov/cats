@@ -146,10 +146,10 @@
 
 .subscription-form__field {
   min-width: 279px;
+
   @include mb(mob-only) {
     width: 100%;
     max-width: 440px;
-    margin-bottom: 20px;
   }
 }
 

@@ -38,7 +38,7 @@
 .navigation__anchor {
   @include mb(tab) {
     display: block;
-    padding: 28px 0;
+    padding: 18px 0;
     font-size: 14px;
     line-height: 1.14; // 16px;
     transition: color $transition;

@@ -1,16 +1,16 @@
 .sbr-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 3px;
 
   @include mb(tab) {
     flex-direction: row;
     align-items: flex-start;
-    gap: 18px;
+    gap: 22px;
   }
 
   @include mb(desk) {
-    gap: 32px;
+    gap: 19px;
   }
 }
 

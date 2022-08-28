@@ -1,30 +1,60 @@
 .offerings {
+  position: relative;
   padding-top: 41px;
   padding-bottom: 60px;
 
-  background-image: url(../images/offerings/bcg-img-mob.svg);
-  background-repeat: no-repeat;
-  background-position: top center;
+  //background-image: url(../images/offerings/bcg-img-mob.svg);
+  //background-repeat: no-repeat;
+  //background-position: top center;
 
-  @include mb(mob-only) {
-    max-width: 480px;
-    background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+  //@include mb(mob-only) {
+  //  max-width: 480px;
+  //  background-size: cover;
+  //  margin-left: auto;
+  //  margin-right: auto;
+  //}
+  //
   @include mb(tab) {
-    background-image: url(../images/offerings/bcg-img-tab.svg);
+    //background-image: url(../images/offerings/bcg-img-tab.svg);
     padding-top: 150px;
     margin-top: -108px;
-    padding-bottom: 105px;
+    padding-bottom: 100px;
   }
 
   @include mb(desk) {
-    background-image: url(../images/offerings/bcg-img-desk.svg);
+    //background-image: url(../images/offerings/bcg-img-desk.svg);
     padding-top: 177px;
     margin-top: -163px;
     padding-bottom: 75px;
+  }
+}
+
+.offerings__bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% 1050px, 100% 100%;
+  --adge: 80px;
+  background-image: url('../images/offerings/bcg-img-mob.svg'),
+  linear-gradient(to bottom, transparent, transparent var(--adge), $color-yellow-main var(--adge), $color-yellow-main);
+
+  @include mb(tab) {
+    background-size: 100% 1140px, 100% 100%;
+    --adge: 160px;
+    background-image: url('../images/offerings/bcg-img-tab.svg'),
+    linear-gradient(to bottom, transparent, transparent var(--adge), $color-yellow-main var(--adge), $color-yellow-main);
+  }
+
+  @include mb(desk) {
+    background-size: 100% 824px, 100% 100%;
+    --adge: 250px;
+    background-image: url('../images/offerings/bcg-img-desk.svg'),
+    linear-gradient(to bottom, transparent, transparent var(--adge), $color-yellow-main var(--adge), $color-yellow-main);
   }
 }
 
@@ -79,7 +109,7 @@
 }
 
 .offerings__description {
-  line-height: 1.17;
+  line-height: 1.14;
   font-size: 14px;
 
   @include mb(tab) {
@@ -175,12 +205,11 @@
 }
 
 .offerings__btn-order {
-  min-width: 130px;
   margin-right: 20px;
 
-  @include mb(desk) {
-    min-width: 106px;
-  }
+  //@include mb(desk) {
+  //  min-width: 106px;
+  //}
 }
 
 .offerings__btn-more {
