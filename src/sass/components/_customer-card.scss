@@ -1,4 +1,4 @@
-.feedback-card {
+.customer-card {
   padding: 8px;
   background-color: $color-white-default;
   border-radius: 0 30px 30px 30px;
@@ -12,15 +12,15 @@
   }
 }
 
-.feedback-card__rating {
+.customer-card__rating {
   margin-bottom: 28px;
 }
 
-.feedback-card__rating-svg {
+.customer-card__rating-svg {
   display: block;
 }
 
-.feedback-card__quote {
+.customer-card__quote {
   display: block;
   margin: 0 0 40px;
   font-weight: 700;
@@ -33,22 +33,22 @@
   }
 }
 
-.feedback-card__cite-wrap {
+.customer-card__cite-wrap {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.feedback-card__img-wrap {
+.customer-card__img-wrap {
   border-radius: 50%;
   //border: 2px solid $color-yellow-main;
   overflow: hidden;
 }
 
-.feedback-card__img {
+.customer-card__img {
 }
 
-.feedback-card__cite {
+.customer-card__cite {
   display: flex;
   flex-direction: column;
   font-style: normal;
@@ -56,10 +56,10 @@
   line-height: 1.5;
 }
 
-.feedback-card__name {
+.customer-card__name {
   font-weight: 500;
 }
 
-.feedback-card__nick {
+.customer-card__nick {
   font-weight: 400;
 }
