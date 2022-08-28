@@ -1,20 +1,21 @@
-.menu__btn {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  color: $color-dark-green;
-
-  @include mb(tab) {
-    display: none;
-  }
-}
-
 .menu {
   @include mb(mob-only) {
     margin-left: auto;
     position: relative;
     display: block;
   }
+
+  @include mb(tab) {
+    display: none;
+  }
+}
+
+.menu__btn {
+  display: block;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: $color-dark-green;
 
   @include mb(tab) {
     display: none;

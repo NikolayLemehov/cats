@@ -1,5 +1,6 @@
 .header {
   min-height: 72px;
+  padding: 9px 0;
   box-shadow: 0 4px 24px rgba(105, 105, 105, 0.1);
 }
 
@@ -16,6 +17,8 @@
 }
 
 .header__burger-icon {
+  display: block;
+
   @include mb(tab) {
     display: none;
   }
@@ -25,4 +28,8 @@
   @include mb(tab) {
     margin-right: auto;
   }
+}
+
+.header__logo-svg {
+  display: block;
 }
