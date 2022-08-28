@@ -1,4 +1,4 @@
-.feedback {
+.customers {
   position: relative;
   z-index: 1;
   padding-top: 60px;
@@ -15,7 +15,7 @@
   }
 }
 
-.feedback__bg {
+.customers__bg {
   position: absolute;
   z-index: -1;
   top: 0;
@@ -24,22 +24,22 @@
   left: 0;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url('../images/feedback/bg-mob.svg');
+  background-image: url('../images/customers/bg-mob.svg');
 
   @include mb(tab) {
-    background-image: url('../images/feedback/bg-tab.svg');
+    background-image: url('../images/customers/bg-tab.svg');
   }
 
   @include mb(desk) {
-    background-image: url('../images/feedback/bg-desk.svg');
+    background-image: url('../images/customers/bg-desk.svg');
   }
 }
 
-.feedback__title {
+.customers__title {
   margin-bottom: 20px;
 }
 
-.feedback__text {
+.customers__text {
   margin-bottom: 32px;
   font-size: 14px;
   line-height: 1.14; // 16px;
@@ -55,7 +55,7 @@
   }
 }
 
-.feedback__list {
+.customers__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -70,7 +70,7 @@
   }
 }
 
-.feedback__item {
+.customers__item {
   @include mb(tab) {
     flex-basis: 336px;
   }
