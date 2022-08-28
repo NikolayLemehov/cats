@@ -1,6 +1,5 @@
 .customers {
   position: relative;
-  z-index: 1;
   padding-top: 60px;
   padding-bottom: 62px;
 
@@ -23,15 +22,24 @@
   bottom: 0;
   left: 0;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url('../images/customers/bg-mob.svg');
+  background-position: bottom center;
+  background-size: 100% 771px, 100% 100%;
+  --adge: 50px;
+  background-image: url('../images/customers/bg-mob.svg'),
+  linear-gradient(to top, transparent, transparent var(--adge), $color-yellow-main var(--adge), $color-yellow-main);
 
   @include mb(tab) {
-    background-image: url('../images/customers/bg-tab.svg');
+    background-size: 100% 554px, 100% 100%;
+    --adge: 150px;
+    background-image: url('../images/customers/bg-mob.svg'),
+    linear-gradient(to top, transparent, transparent var(--adge), $color-yellow-main var(--adge), $color-yellow-main);
   }
 
   @include mb(desk) {
-    background-image: url('../images/customers/bg-desk.svg');
+    background-size: 100% 654px, 100% 100%;
+    --adge: 250px;
+    background-image: url('../images/customers/bg-desk.svg'),
+    linear-gradient(to top, transparent, transparent var(--adge), $color-yellow-main var(--adge), $color-yellow-main);
   }
 }
 
