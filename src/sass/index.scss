@@ -13,6 +13,9 @@
 @import 'components/customer-card';
 @import 'components/menu';
 @import 'components/navigation';
+@import 'components/backdrop';
+@import 'components/modal';
+@import 'components/order-form';
 
 // layout components
 
@@ -27,4 +30,3 @@
 @import 'components/sections/favorite';
 @import 'components/sections/customers';
 @import 'components/sections/subscription';
-@import 'components/sections/backdrop';

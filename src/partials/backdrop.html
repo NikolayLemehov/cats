@@ -5,5 +5,78 @@
         <use href="./images/icons.svg#icon-small-close"></use>
       </svg>
     </button>
+    <p class="modal__title">Order Form</p>
+    <form class="order-form" name="order-form">
+      <div class="field order-form__field field--order">
+        <label
+          class="field__input-wrapper order-form__label"
+          for="order-name-field"
+          >Name</label
+        >
+        <input
+          class="field__input order-form__input"
+          id="order-name-field"
+          type="text"
+          name="name"
+          placeholder="Your name"
+          required
+          maxlength="25"
+          minlength="3"
+        />
+        <div class="field__error">
+          <svg width="12" height="12">
+            <use href="./images/icons.svg#icon-error"></use>
+          </svg>
+          The name must be between 3 and 25 characters
+        </div>
+      </div>
+
+      <div class="field order-form__field">
+        <label
+          class="field__input-wrapper order-form__label"
+          for="order-phone-field"
+          >Phone number</label
+        >
+        <input
+          class="field__input order-form__input"
+          id="order-phone-field"
+          type="tel"
+          name="phone"
+          placeholder="+38(0__)___ __ __"
+          required
+        />
+        <div class="field__error">
+          <svg width="12" height="12">
+            <use href="./images/icons.svg#icon-error"></use>
+          </svg>
+          This phone must be in the format 099 000 00 00
+        </div>
+      </div>
+
+      <div class="field order-form__field">
+        <label
+          class="field__input-wrapper order-form__label"
+          for="order-email-field"
+          >E-mail</label
+        >
+        <input
+          class="field__input order-form__input"
+          id="order-email-field"
+          type="email"
+          name="email"
+          placeholder="example@gmail.com"
+          required
+        />
+        <div class="field__error">
+          <svg width="12" height="12">
+            <use href="./images/icons.svg#icon-error"></use>
+          </svg>
+          Please enter a valid email address
+        </div>
+      </div>
+      <button class="btn btn--white btn--big order-form__btn" type="submit">
+        Send
+      </button>
+    </form>
   </div>
 </div>

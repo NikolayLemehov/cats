@@ -1,4 +1,7 @@
 .hero {
+  position: relative;
+  z-index: 1;
+
   @include mb(mob-only) {
     padding-bottom: 50px;
   }
