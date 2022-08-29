@@ -38,18 +38,19 @@
           >Phone number</label
         >
         <input
-          class="field__input order-form__input"
+          class="field__input order-form__input phone-mask"
           id="order-phone-field"
           type="tel"
           name="phone"
           placeholder="+38(0__)___ __ __"
+          pattern="[+][3][8][(][0][0-9]{2}[)][0-9]{3}[ ][0-9]{2}[ ][0-9]{2}"
           required
         />
         <div class="field__error">
           <svg width="12" height="12">
             <use href="./images/icons.svg#icon-error"></use>
           </svg>
-          This phone must be in the format 099 000 00 00
+          This phone must be in the format +38(099)000 00 00
         </div>
       </div>
 

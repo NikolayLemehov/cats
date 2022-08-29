@@ -39,3 +39,13 @@
   });
   setTimeout(() => sliderRef.removeAttr('style'));
 })();
+
+(() => {
+  $(document).ready(function(){
+    $(document).find('.phone-mask').mask('+38(099)999 99 99', {
+      translation: {
+        '0': {pattern: /[0]/},
+      },
+    });
+  });
+})()
