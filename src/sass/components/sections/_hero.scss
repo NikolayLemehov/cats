@@ -1,6 +1,6 @@
 .hero {
   @include mb(mob-only) {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
   @include mb(not-desk) {

@@ -24,12 +24,14 @@
   }
 
   @include mb(tab-only) {
-    background-position: center bottom;
-    background-size: 785px;
-    background-image: url(../images/footer/img01-768_@1x.png);
+    background-position: center bottom, top right;
+    background-size: 785px, 203px;
+    background-image: url(../images/footer/img01-768_@1x.png),
+      url(../images/footer/img02-768_@1x.png);
 
     @include retina {
-      background-image: url(../images/footer/img01-768_@2x.png);
+      background-image: url(../images/footer/img01-768_@2x.png),
+        url(../images/footer/img02-768_@2x.png);
     }
   }
 
