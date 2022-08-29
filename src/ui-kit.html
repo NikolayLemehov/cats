@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang='ru'>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>UI-Kit - FoodSta</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
+      href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap'
+      rel='stylesheet'
     />
 
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <link rel='stylesheet' href='./sass/index.scss' />
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js'
+            integrity='sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=='
+            crossorigin='anonymous' referrerpolicy='no-referrer'></script>
+    <script type='module' src='./index.js'></script>
     <style>
       .svg {
         fill: currentColor;
@@ -73,6 +79,28 @@
                   <use href='./images/icons.svg#icon-error'></use>
                 </svg>
                 Not a valid email address (example@email.com)
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class='container'>
+          <form>
+            <div class='field'>
+              <label class='field__input-wrapper' for='ui-kit-email-field2'>
+              </label>
+              <input
+                class='field__input phone-mask'
+                id='ui-kit-email-field2'
+                type='tel'
+                name='tel2'
+                placeholder='+38(0__)___ __ __'
+                required
+                pattern='[+][3][8][(][0][0-9]{2}[)][0-9]{3}[ ][0-9]{2}[ ][0-9]{2}'>
+              <div class='field__error'>
+                <svg width='12' height='12'>
+                  <use href='./images/icons.svg#icon-error'></use>
+                </svg>
+                This phone must be in the format +38(099)000 00 00
               </div>
             </div>
           </form>
