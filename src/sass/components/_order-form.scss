@@ -1,0 +1,48 @@
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form__label {
+  padding-bottom: 2px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: $color-black;
+}
+
+.order-form__btn {
+  min-width: 106px;
+  align-self: center;
+}
+
+.order-form__field {
+  width: 100%;
+
+  &:not(:last-of-type) {
+    margin-bottom: 5px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 13px;
+  }
+}
+
+.order-form__label {
+  padding-left: 12px;
+}
+
+.order-form__input {
+  padding: 12px;
+  height: 48px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  &::placeholder {
+    color: #c4c4c4;
+  }
+}

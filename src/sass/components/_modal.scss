@@ -1,0 +1,44 @@
+.modal {
+  min-height: 449px;
+  padding: 32px 20px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+
+  background-color: $color-yellow-main;
+  transition: transform $transition;
+
+  width: 100%;
+  max-width: 458px;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: $color-white-default;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border: transparent;
+  padding: 0;
+}
+
+.modal__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+
+  text-align: center;
+  margin-bottom: 20px;
+
+  color: $color-black;
+}
