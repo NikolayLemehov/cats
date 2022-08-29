@@ -1,0 +1,78 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  padding: 93px 15px;
+  overflow: auto;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity var(--transition-func), visibility var(--transition-func);
+
+  &.is-hidden {
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+
+    & .modal {
+      @media (min-width: 768px) {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+    }
+  }
+}
+
+.modal {
+  position: relative;
+  padding: 25px 20px;
+  text-align: left;
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  @media (min-width: 480px) {
+    padding: 40px;
+  }
+
+  @media (min-width: 768px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 528px;
+    transition: transform var(--transition-func);
+  }
+
+  .backdrop-modal.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  &__close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: var(--primary-white-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: fill var(--transition-func);
+
+    &__close-icon {
+      vertical-align: middle;
+
+      &:hover,
+      &:focus {
+        fill: var(--accent-color);
+      }
+    }
+  }
+}

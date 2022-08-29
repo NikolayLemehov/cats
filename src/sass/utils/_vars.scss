@@ -1,46 +1,50 @@
 // Colors
 
-$color-black:                       #2c2c2c;
-$color-white-default:               #ffffff;
-$color-white:                       #fefefe;
-$color-accent:                      #ff4d8d;
-$color-error:                       #ff705d;
-$color-text:                        #3d3d3d;
-$color-text2:                       #969696;
-$color-text3:                       #4a4a4a;
-$color-placeholder:                 #505050;
-$color-stars:                       #4a4a4a;
-$color-btn-green:                   #bbf330;
-$color-btn-green-hover:             #b5ff00;
-$color-dark-green:                  #7eb101;
-$color-dark-green-hover:            #597d00;
-$color-yellow-main:                 #ffe550;
-$transition:                        cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+$color-black: #2c2c2c;
+$color-white-default: #ffffff;
+$color-white: #fefefe;
+$color-accent: #ff4d8d;
+$color-error: #ff705d;
+$color-text: #3d3d3d;
+$color-text2: #969696;
+$color-text3: #4a4a4a;
+$color-placeholder: #505050;
+$color-stars: #4a4a4a;
+$color-btn-green: #bbf330;
+$color-btn-green-hover: #b5ff00;
+$color-dark-green: #7eb101;
+$color-dark-green-hover: #597d00;
+$color-yellow-main: #ffe550;
+$transition: npm 250ms;
 
 // Gradient
 
-$grad1:                             linear-gradient(180deg, #fe88b3 0%, #ff4d8d 100%);
-$grad2:                             linear-gradient(180deg, #fdfdfd 0%, #fff5f9 37.3%, #fe88b3 156.25%);
-$grad-shadow-fruit:                 radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+$grad1: linear-gradient(180deg, #fe88b3 0%, #ff4d8d 100%);
+$grad2: linear-gradient(180deg, #fdfdfd 0%, #fff5f9 37.3%, #fe88b3 156.25%);
+$grad-shadow-fruit: radial-gradient(
+  50% 50% at 50% 50%,
+  #2f583f 0%,
+  rgba(105, 105, 105, 0) 100%
+);
 
 // Fonts
 
-$font-primary:                      "Roboto", Arial, sans-serif;
+$font-primary: 'Roboto', Arial, sans-serif;
 
 // Retina
 
-$retina-dpi:                        192dpi;
-$retina-dppx:                       2dppx;
+$retina-dpi: 192dpi;
+$retina-dppx: 2dppx;
 
 // Breakpoints
 
-$vp-mob:                            320px;
-$vp-big-mob:                        480px;
-$vp-tab:                            768px;
-$vp-desk:                           1280px;
+$vp-mob: 320px;
+$vp-big-mob: 480px;
+$vp-tab: 768px;
+$vp-desk: 1280px;
 
 // Container padding
 
-$padding-container-desk:            16px;
-$padding-container-tablet:          32px;
-$padding-container-mob:             20px;
+$padding-container-desk: 16px;
+$padding-container-tablet: 32px;
+$padding-container-mob: 20px;
