@@ -1,9 +1,6 @@
-.hero__container {
-  position: relative;
-
+.hero {
   @include mb(mob-only) {
-    margin-bottom: 50px;
-    max-width: 440px;
+    padding-bottom: 50px;
   }
 
   @include mb(not-desk) {
@@ -15,9 +12,13 @@
   }
 
   @include mb(desk) {
-    padding-top: 158px;
+    padding-top: 159px;
     padding-bottom: 164px;
   }
+}
+
+.hero__container {
+  position: relative;
 }
 
 .hero__wrap {
@@ -77,13 +78,13 @@
 
   @include mb(tab-only) {
     width: 320px;
+    top: 89px;
     right: 40px;
-    bottom: 0;
   }
 
   @include mb(desk) {
     width: 580px;
-    top: 14px;
+    top: -145px;
     right: 30px;
   }
 }

@@ -1,6 +1,6 @@
 # Group project by Kits
 
-## Links
+## Project Links
 
 - [Github](https://github.com/NikolayLemehov/cats)
 - [GithubPages](https://nikolaylemehov.github.io/cats/)
@@ -10,3 +10,11 @@
 ## Template
 
 - [README.template](https://github.com/NikolayLemehov/cats/blob/main/README.template.md)
+
+## Team
+
+- Team Lead - Микола Лємєхов
+- SCRAM Master - Мар’яна Мазурок
+- Performer - Андрій Марциняк
+- Performer - Андрій Єщенко
+

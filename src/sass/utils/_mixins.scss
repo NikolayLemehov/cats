@@ -5,6 +5,7 @@
     @content;
   }
 }
+
 @mixin mb($type) {
   $mobile: $vp-big-mob;
   $tablet: $vp-tab;

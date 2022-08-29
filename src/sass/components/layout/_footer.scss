@@ -6,9 +6,11 @@
   margin-right: auto;
 
   @include mb(mob-only) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-position: center bottom, top right, top 132px left;
     background-size: 253px, 104px, 110px;
-    max-width: 480px;
 
     background-image: url(../images/footer/img01-320_@1x.png),
       url(../images/footer/img02-320_@1x.png),
@@ -22,13 +24,20 @@
   }
 
   @include mb(tab-only) {
-    background-position: center bottom;
-    background-size: 785px;
-    background-image: url(../images/footer/img01-768_@1x.png);
+    background-position: center bottom, top right;
+    background-size: 785px, 203px;
+    background-image: url(../images/footer/img01-768_@1x.png),
+      url(../images/footer/img02-768_@1x.png);
 
     @include retina {
-      background-image: url(../images/footer/img01-768_@2x.png);
+      background-image: url(../images/footer/img01-768_@2x.png),
+        url(../images/footer/img02-768_@2x.png);
     }
+  }
+
+  @include mb(tab) {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   @include mb(desk) {
@@ -43,14 +52,7 @@
 
 .footer__container {
   @include mb(mob-only) {
-    padding-top: 60px;
-    padding-bottom: 60px;
     max-width: 440px;
-  }
-
-  @include mb(tab) {
-    padding-top: 100px;
-    padding-bottom: 100px;
   }
 }
 
